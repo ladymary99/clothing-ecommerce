@@ -38,7 +38,7 @@ const NewsSection = () => {
   }, [inView]);
 
   return (
-    <section id="news" className="news-section section" ref={ref}>
+    <section id="news" className="news-section " ref={ref}>
       <div className="container">
         <div className="news-grid">
           <div className="news-content" ref={textRef}>

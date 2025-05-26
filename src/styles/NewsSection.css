@@ -1,13 +1,12 @@
 .news-section {
   background-color: var(--color-black);
   color: var(--color-white);
-  padding: var(--spacing-xxxl) 0;
+  padding: 5px;
 }
 
 .news-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-xl);
 }
 .news-content {
   width: 50%;
@@ -34,21 +33,20 @@
   font-size: 25px;
 }
 
-.news-btn:hover {
+/* .news-btn:hover {
   background-color: var(--color-accent);
   color: var(--color-white);
-}
+} */
 
 .news-image {
-  overflow: hidden;
-  margin: 10px;
+  width: 100%;
+  padding-right: 20px;
 }
 
 .news-image img {
   width: 50%;
   height: auto;
   display: inline-block;
-
   transition: transform 0.5s ease;
 }
 
