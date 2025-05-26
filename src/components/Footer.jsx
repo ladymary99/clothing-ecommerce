@@ -155,9 +155,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-bottom">
-          <div className="footer-logo">CONFI</div>
-        </div>
+        <p className="footer-logo">CONFI</p>
       </div>
     </footer>
   );
