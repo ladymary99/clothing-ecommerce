@@ -1,0 +1,147 @@
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: var(--header-height);
+  background-color: var(--color-white);
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.hero-content {
+  z-index: 10;
+  max-width: 500px;
+  margin-top: var(--spacing-xxl);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-title::after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 3px;
+  background-color: var(--color-black);
+  bottom: -8px;
+  left: 0;
+}
+
+.hero-text {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.6;
+}
+
+.hero-btn {
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-size: 1.1rem;
+}
+
+.hero-model {
+  position: absolute;
+  right: -5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
+  height: 80%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.hero-model.loaded {
+  opacity: 1;
+}
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: var(--spacing-xl);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 60px;
+  background-color: var(--color-black);
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black);
+  animation: scrollDown 1.5s infinite;
+}
+
+.scroll-text {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.pixel-letter {
+  display: inline-block;
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero-title {
+    font-size: 5rem;
+  }
+  
+  .hero-text {
+    font-size: 1.2rem;
+  }
+  
+  .hero-model {
+    position: relative;
+    right: 0;
+    top: 0;
+    transform: none;
+    width: 50%;
+    height: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 6rem;
+  }
+}
