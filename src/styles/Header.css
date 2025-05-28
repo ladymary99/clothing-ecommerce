@@ -25,7 +25,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 50px;
-  font-family: var(--font-pixel);
+  font-family: RobotoMono, sans-serif;
 }
 
 .conli-logo {
@@ -43,7 +43,7 @@
 }
 
 .nav-list a {
-  font-family: var(--font-pixel);
+  font-family: RobotoMono, sans-serif;
   font-size: 1.7rem;
   text-transform: lowercase;
   position: relative;
