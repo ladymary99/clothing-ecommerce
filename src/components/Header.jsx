@@ -8,6 +8,44 @@ const Header = () => {
   const tl = useRef();
 
   useEffect(() => {
+    tl.current = gsap.timeline({ paused: true });
+
+    gsap.fromTo(
+      headerRef.current,
+      { y: -100, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.8, delay: 0.5 }
+    );
+
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition > 50) {
+        gsap.to(headerRef.current, {
+          duration: 0.4,
+          backdropFilter: "blur(50px)",
+          backgroundColor: "rgba(236, 236, 236, 0.4)",
+          ease: "power2.out",
+          overwrite: "auto",
+        });
+      } else {
+        gsap.to(headerRef.current, {
+          duration: 0.4,
+          backdropFilter: "blur(0px)",
+          backgroundColor: "transparent",
+          ease: "power2.out",
+          overwrite: "auto",
+        });
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
     // Initialize animation timeline
     tl.current = gsap.timeline({ paused: true });
 
