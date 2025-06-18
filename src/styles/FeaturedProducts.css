@@ -1,25 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Anton&display=swap");
 
 .featured-products.section {
-  background-color: #000; /* Black background for the whole section */
-  padding: 40px 0; /* Add some padding */
-  font-family: "Roboto Condensed", sans-serif; /* A blockier sans-serif font */
+  padding: 70px 0px;
+  font-family: "Roboto Condensed", sans-serif;
 }
-
+.products-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: auto;
+}
+.product-card,
+.product-image-wrapper,
+.product-actual-image,
+.add-to-cart-btn {
+  opacity: 1 !important;
+}
 .product-card {
-  background-color: #000; /* Ensure product card background is black */
-  border: none; /* Remove any default borders */
-  color: #fff; /* Default text color within card to white */
+  background-color: #000;
+  border: none;
+  color: #fff;
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center image and button */
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .product-image-wrapper {
-  position: relative; /* For positioning the price tag */
+  position: relative;
   width: 100%;
-  /* max-width: 250px; /* Control image size if needed */
   margin-bottom: 10px;
 }
 
@@ -27,118 +39,97 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  /* aspect-ratio: 3/4; /* Or your desired aspect ratio */
+}
+.carousel-underline {
+  width: 1120px;
+  height: 3px;
+  background-color: black;
+  transform: translate(0px, -106px);
 }
 
 .price-tag {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
   padding: 5px 8px;
-  font-size: 1.5rem; /* Larger font size for price */
+  font-size: 2rem;
   font-weight: bold;
-  font-family: "Anton", sans-serif; /* Even blockier font for price */
+  font-family: "Roboto Condensed", sans-serif;
   line-height: 1;
 }
 
 .product-details {
-  width: 100%; /* Make details (button container) full width of card */
+  width: 100%;
 }
 
 .add-to-cart-btn {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
-  border: 1px solid #fff; /* White border to make it visible on black */
+  background-color: #ff7120;
+  color: #fff;
+  border: 1px solid #fff;
   padding: 12px 10px;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: "Roboto Condensed", sans-serif; /* Consistent blocky font */
-  width: 100%; /* Full width button */
+  font-family: "Roboto Condensed", sans-serif;
+  width: 100%;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+
   font-size: 0.9rem;
   letter-spacing: 0.5px;
 }
 
-.add-to-cart-btn:hover {
-  background-color: #333; /* Darker grey on hover */
-  color: #fff;
-}
-
-/* ... existing code ... <swiper button prev/next, pagination removal (already hidden)> */
 .featured-products .swiper-button-prev,
 .featured-products .swiper-button-next {
-  color: #fff; /* Make Swiper arrows white */
+  color: black;
+  transform: translate(-13px, 70px);
 }
-
+.featured-products .swiper-button-next {
+  transform: translate(10px, 70px);
+}
 .featured-products .swiper-button-prev.swiper-button-disabled,
 .featured-products .swiper-button-next.swiper-button-disabled {
-  color: #555; /* Dim disabled arrows */
+  color: #555;
   opacity: 0.5;
 }
-
-/* New styles for side-by-side layout and connecting line */
+.featured-products .swiper-button-prev,
+.featured-products .swiper-button-next:hover {
+  color: #ff7120;
+}
 .featured-products-layout {
   display: flex;
   align-items: center;
-  justify-content: space-around; /* Adjust for better spacing */
-  gap: 20px;
-  padding: 20px; /* Add some padding around the layout */
+  justify-content: space-around;
+  gap: 10px;
+  padding: 60px;
 }
 
 .products-carousel-column {
   flex-grow: 1;
-  max-width: calc(100% - 200px); /* Adjust based on title and line width */
-}
-
-.connecting-line-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px; /* Increased width for a more pronounced line */
-  height: 3px;
-  position: relative;
-}
-
-.connecting-line-container .line {
-  width: 100%;
-  height: 2px; /* Thicker white line */
-  background-color: #fff;
-}
-
-.connecting-line-container .arrow-right {
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 10px solid #fff; /* White arrow, slightly larger */
-  position: absolute;
-  right: -3px;
+  max-width: calc(100% - 200px);
 }
 
 .section-header-column {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align to the start */
+  justify-content: flex-start;
   text-align: left;
-  min-width: 180px; /* Give title column some minimum width */
+  min-width: 200px;
 }
 
 .section-header-column .section-title {
-  font-family: "Anton", sans-serif; /* Use a very blocky/impactful font */
-  color: #fff; /* White text */
-  font-size: 2rem; /* Base font size for 'Best' and 'Seller' */
+  font-family: "Anton", sans-serif;
+  color: black;
+  font-size: 3rem;
   line-height: 1.1;
-  margin: 0;
+  margin: 0px 0px 40px 0;
   text-transform: uppercase;
 }
 
 .section-header-column .section-title .title-products-highlight {
-  font-size: 2.8rem; /* Larger font size for "Products" */
-  font-weight: bold; /* Ensure it's bold */
-  display: block; /* Make it take its own line if needed due to size */
+  font-size: 2.8rem;
+  font-weight: bold;
+  display: block;
 }
 
 @media (max-width: 1023px) {
@@ -149,7 +140,7 @@
   }
   .products-carousel-column {
     width: 100%;
-    max-width: 90%; /* Give some horizontal margin on smaller screens */
+    max-width: 90%;
   }
   .connecting-line-container {
     width: 80px;
@@ -172,15 +163,14 @@
 }
 
 @media (max-width: 767px) {
-  /* Mobile specific adjustments */
   .products-carousel-column {
     max-width: 100%;
   }
   .featured-products .swiper-button-next {
-    right: 5px; /* Adjust arrow position for small screens */
+    right: 5px;
   }
   .price-tag {
-    font-size: 1.2rem; /* Slightly smaller price on mobile */
+    font-size: 1.2rem;
     top: 5px;
     right: 5px;
   }

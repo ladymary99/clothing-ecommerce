@@ -1,20 +1,15 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import anime from "animejs";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation"; // Keep this for styling the navigation buttons
-// import "swiper/css/pagination"; // Pagination CSS import removed
-// import required modules
-import { Navigation } from "swiper/modules"; // Pagination module import removed
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
 import "../styles/FeaturedProducts.css";
 
 const ProductCard = ({ image, price }) => {
   const buttonRef = useRef(null);
 
-  // ... existing code ... <useEffect for button animation>
   useEffect(() => {
     const button = buttonRef.current;
     const handleMouseEnter = () => {
@@ -33,27 +28,16 @@ const ProductCard = ({ image, price }) => {
         easing: "easeOutQuad",
       });
     };
-    if (button) {
-      button.addEventListener("mouseenter", handleMouseEnter);
-      button.addEventListener("mouseleave", handleMouseLeave);
-    }
-    return () => {
-      if (button) {
-        button.removeEventListener("mouseenter", handleMouseEnter);
-        button.removeEventListener("mouseleave", handleMouseLeave);
-      }
-    };
   }, []);
 
   return (
     <div className="product-card">
       <div className="product-image-wrapper">
         <img src={image} alt="Product" className="product-actual-image" />
-        <span className="price-tag">{price}</span> {/* Price moved here */}
+        <span className="price-tag">{price}</span>
       </div>
       <div className="product-details">
         {" "}
-        {/* This div now primarily for the button */}
         <button ref={buttonRef} className="btn add-to-cart-btn">
           Add to cart
         </button>
@@ -63,7 +47,6 @@ const ProductCard = ({ image, price }) => {
 };
 
 const FeaturedProducts = () => {
-  // ... existing code ... <refs, useEffect for heading animation, products array, animateSlideContent function>
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const swiperRef = useRef(null);
@@ -81,38 +64,32 @@ const FeaturedProducts = () => {
   const products = [
     {
       id: 1,
-      image:
-        "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/assets/picnews.jpg",
       price: "30$",
     },
     {
       id: 2,
-      image:
-        "https://images.pexels.com/photos/1176618/pexels-photo-1176618.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/assets/pent1.jpg",
       price: "30$",
     },
     {
       id: 3,
-      image:
-        "https://images.pexels.com/photos/1484771/pexels-photo-1484771.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/assets/pent2.jpg",
       price: "30$",
     },
     {
       id: 4,
-      image:
-        "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/assets/pent3.jpg",
       price: "40$",
     },
     {
       id: 5,
-      image:
-        "https://images.pexels.com/photos/2048548/pexels-photo-2048548.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/assets/pent4.jpg",
       price: "50$",
     },
     {
       id: 6,
-      image:
-        "https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/assets/pent6.jpg",
       price: "60$",
     },
   ];
@@ -122,7 +99,7 @@ const FeaturedProducts = () => {
     swiperInstance.slides.forEach((slide) => {
       const productCard = slide.querySelector(".product-card");
       const imageWrapper = slide.querySelector(".product-image-wrapper");
-      const priceTag = slide.querySelector(".price-tag"); // Will be found within imageWrapper now
+      const priceTag = slide.querySelector(".price-tag");
       const addToCartBtn = slide.querySelector(".add-to-cart-btn");
       const isVisible =
         slide.classList.contains("swiper-slide-active") ||
@@ -150,7 +127,7 @@ const FeaturedProducts = () => {
             duration: 0.5,
             ease: "power2.out",
             delay: 0.55,
-          }); // Animation should still work
+          });
         if (addToCartBtn)
           gsap.to(addToCartBtn, {
             opacity: 1,
@@ -176,16 +153,15 @@ const FeaturedProducts = () => {
     >
       <div className="container featured-products-layout">
         <div className="products-carousel-column">
-          {/* ... existing code ... <Swiper component setup> */}
           <Swiper
             ref={swiperRef}
             modules={[Navigation]}
-            spaceBetween={30}
-            slidesPerView={1}
+            spaceBetween={0}
+            slidesPerView={4}
             navigation
             loop={false}
             breakpoints={{
-              640: { slidesPerView: 2, spaceBetween: 20 },
+              640: { slidesPerView: 1, spaceBetween: 20 },
               768: { slidesPerView: 2, spaceBetween: 30 },
               1024: { slidesPerView: 3, spaceBetween: 40 },
             }}
@@ -205,11 +181,7 @@ const FeaturedProducts = () => {
               </SwiperSlide>
             ))}{" "}
           </Swiper>
-        </div>
-
-        <div className="connecting-line-container">
-          <div className="line"></div>
-          <div className="arrow-right"></div>
+          <div className="carousel-underline" />
         </div>
 
         <div className="section-header-column">
