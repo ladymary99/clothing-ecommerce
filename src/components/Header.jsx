@@ -97,7 +97,7 @@ const Header = () => {
 
         <div className="logo-container">
           <a href="#home" className="logo">
-            CONFI
+            VANTE
           </a>
         </div>
 
