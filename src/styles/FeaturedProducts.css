@@ -44,17 +44,17 @@
   width: 1120px;
   height: 3px;
   background-color: black;
-  transform: translate(0px, -106px);
+  transform: translate(0px, -104px);
 }
 
-.price-tag {
+.pricetag {
   position: absolute;
   top: 10px;
   right: 10px;
   background-color: rgba(0, 0, 0, 0);
   color: #fff;
   padding: 5px 8px;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
   line-height: 1;
@@ -65,18 +65,26 @@
 }
 
 .add-to-cart-btn {
-  background-color: #ff7120;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 12px 10px;
+  background-color: #99f78d;
+  color: black;
+  padding: 5px 10px;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
   width: 100%;
-  cursor: pointer;
-
   font-size: 0.9rem;
   letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  clip-path: polygon(
+    10px 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%,
+    0 10px
+  );
 }
 
 .featured-products .swiper-button-prev,
@@ -94,7 +102,7 @@
 }
 .featured-products .swiper-button-prev,
 .featured-products .swiper-button-next:hover {
-  color: #ff7120;
+  color: #99f78d;
 }
 .featured-products-layout {
   display: flex;

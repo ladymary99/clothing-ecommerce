@@ -34,11 +34,11 @@ const ProductCard = ({ image, price }) => {
     <div className="product-card">
       <div className="product-image-wrapper">
         <img src={image} alt="Product" className="product-actual-image" />
-        <span className="price-tag">{price}</span>
+        <span className="pricetag">{price}</span>
       </div>
       <div className="product-details">
         {" "}
-        <button ref={buttonRef} className="btn add-to-cart-btn">
+        <button ref={buttonRef} className="add-to-cart-btn">
           Add to cart
         </button>
       </div>
@@ -99,7 +99,7 @@ const FeaturedProducts = () => {
     swiperInstance.slides.forEach((slide) => {
       const productCard = slide.querySelector(".product-card");
       const imageWrapper = slide.querySelector(".product-image-wrapper");
-      const priceTag = slide.querySelector(".price-tag");
+      const priceTag = slide.querySelector(".pricetag");
       const addToCartBtn = slide.querySelector(".add-to-cart-btn");
       const isVisible =
         slide.classList.contains("swiper-slide-active") ||

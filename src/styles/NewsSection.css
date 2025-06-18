@@ -18,6 +18,7 @@
 .news-title {
   font-size: 80px;
   margin-bottom: var(--spacing-lg);
+  font-family: "Anton", sans-serif;
 }
 
 .news-text {
@@ -27,16 +28,22 @@
 }
 
 .news-btn {
-  background-color: whitesmoke;
+  background-color: #99f78d;
   color: black;
   padding: 7px 35px;
   font-size: 25px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  clip-path: polygon(
+    10px 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%,
+    0 10px
+  );
 }
-
-/* .news-btn:hover {
-  background-color: var(--color-accent);
-  color: var(--color-white);
-} */
 
 .news-image {
   width: 100%;

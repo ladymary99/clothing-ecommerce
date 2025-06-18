@@ -42,7 +42,7 @@ const NewsSection = () => {
       <div className="container">
         <div className="news-grid">
           <div className="news-content" ref={textRef}>
-            <h2 className="news-title pixel-text">NEWS</h2>
+            <h2 className="news-title">NEWS</h2>
             <p className="news-text">
               we bring confidence in every things you wear and make you feel
               like you are a super model
