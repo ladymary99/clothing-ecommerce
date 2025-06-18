@@ -81,21 +81,25 @@ const Hero = () => {
           </h1>
           <div ref={textRef} className="hero-text">
             <p>
-              we bring confidence in
-              <br />
-              every things you wear
-              <br />
-              and make you feel like
-              <br />
-              you are a super model
+              we bring confidence in every things you wear and make you feel
+              like you are a super model
             </p>
           </div>
           <button ref={buttonRef} className="hero-btn">
             Shop now
           </button>
         </div>
+        <div className="pants-video">
+          <video
+            src="/assets/3dpants.mp4" // Replace with your actual video path
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="pants-video-element"
+          />
+        </div>
       </div>
-      <div></div>
     </section>
   );
 };

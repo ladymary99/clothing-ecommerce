@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "LabsAmiga";
+  src: url("path/to/LabsAmiga.ttf") format("truetype");
+}
 .hero {
   min-height: 100vh;
   display: flex;
@@ -25,11 +29,10 @@
 
 .hero-title {
   font-size: 4rem;
-  font-weight: 900;
+
   margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   background: black;
+  font-family: "Anton", sans-serif;
 
   background-clip: text;
   opacity: 0;
@@ -37,7 +40,6 @@
 
 .hero-text {
   font-size: 1.2rem;
-  line-height: 1.6;
   margin-bottom: 3rem;
   opacity: 0;
 }
@@ -45,25 +47,41 @@
 .hero-text p {
   margin: 0;
   color: black;
+  font-size: 1.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.pants-video {
+  position: relative;
+  width: 95%;
+  height: 100%; /* Adjust based on your layout */
+  overflow: hidden;
+  padding: 50px;
+}
+
+.pants-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-btn {
-  background: black;
+  background: #ff7120;
   border: none;
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
   font-weight: 600;
-  color: white;
-  border-radius: 50px;
+  color: black;
+  border-radius: 3px;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  opacity: 0;
-  box-shadow: 0 10px 30px rgba(74, 144, 226, 0.3),
-    0 0 20px rgba(74, 144, 226, 0.2);
-  position: relative;
-  overflow: hidden;
+  clip-path: polygon(
+    10px 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%,
+    0 10px
+  );
 }
 
 .hero-btn:hover {

@@ -7,12 +7,6 @@
   z-index: 1000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   backdrop-filter: blur(10px);
-  background-color: transparent;
-}
-
-.header.scrolled {
-  background-color: var(--color-white);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -26,8 +20,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 50px;
-  font-family: RobotoMono, sans-serif;
+  width: 100px;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .conli-logo {
@@ -45,8 +39,8 @@
 }
 
 .nav-list a {
-  font-family: RobotoMono, sans-serif;
-  font-size: 1.7rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.3rem;
   text-transform: lowercase;
   position: relative;
 }
@@ -58,7 +52,7 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: var(--color-black);
+
   transition: width 0.3s ease;
 }
 
