@@ -13,8 +13,9 @@
 
 .loader-content {
   display: flex;
-  font-family: var(--font-pixel);
+  font-family: "Anton", sans-serif;
   font-size: 3rem;
+  color: #99f78d;
 }
 
 .loader-letter {

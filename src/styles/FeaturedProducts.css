@@ -27,6 +27,14 @@
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
+  clip-path: polygon(
+    10px 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%,
+    0 10px
+  );
 }
 
 .product-image-wrapper {

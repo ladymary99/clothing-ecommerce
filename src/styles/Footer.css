@@ -1,6 +1,6 @@
 .footer {
-  background-color: var(--color-white);
-  padding: var(--spacing-xxl) 0 var(--spacing-xl);
+  background-color: #99f78d;
+  padding: 30px 0 0 0;
   border-top: 1px solid var(--color-gray-200);
 }
 
@@ -11,7 +11,7 @@
 }
 
 .footer-title {
-  font-family: var(--font-pixel);
+  font-family: "Anton", sans-serif;
   font-size: 1.7rem;
   margin-bottom: var(--spacing-md);
   text-transform: lowercase;
@@ -71,17 +71,20 @@
 
 .submit-btn {
   width: 100%;
+  clip-path: polygon(
+    10px 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%,
+    0 10px
+  );
 }
 
 .footer-logo {
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
-  font-family: var(--font-pixel);
-  font-size: 9rem;
-}
-
-.footer-logo:hover {
-  opacity: 1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {

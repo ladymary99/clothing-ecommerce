@@ -154,8 +154,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-
-        <p className="footer-logo">CONFI</p>
+        <img src="/assets/logo2.png" alt="arrow" />
       </div>
     </footer>
   );
