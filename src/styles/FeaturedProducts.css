@@ -3,6 +3,7 @@
 .featured-products.section {
   padding: 70px 0px;
   font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(234, 234, 235);
 }
 .products-swiper .swiper-slide {
   display: flex;

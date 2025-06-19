@@ -35,7 +35,7 @@ const Loader = forwardRef((props, ref) => {
         <span className="loader-letter">A</span>
         <span className="loader-letter">N</span>
         <span className="loader-letter">T</span>
-        <span className="loader-letter">E</span>
+        <span className="loader-letter">É</span>
       </div>
     </div>
   );

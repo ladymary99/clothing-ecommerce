@@ -112,6 +112,15 @@ const Footer = () => {
                   LinkedIn
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  TikTok
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -125,7 +134,7 @@ const Footer = () => {
                 <a href="#">FAQ</a>
               </li>
               <li>
-                <a href="mailto:info@clothingbrand.com">confi@clothing.com</a>
+                <a href="mailto:info@clothingbrand.com">VANTÉ@clothing.fr</a>
               </li>
               <li>paris, france</li>
             </ul>

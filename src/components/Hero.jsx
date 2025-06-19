@@ -91,7 +91,7 @@ const Hero = () => {
         </div>
         <div className="pants-video">
           <video
-            src="/assets/3dpants.mp4" // Replace with your actual video path
+            src="/assets/3dpants.mp4"
             autoPlay
             muted
             loop
