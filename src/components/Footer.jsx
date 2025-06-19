@@ -153,11 +153,7 @@ const Footer = () => {
                 placeholder="Your email address"
                 required
               />
-              <button
-                type="submit"
-                className="btn submit-btn"
-                ref={submitBtnRef}
-              >
+              <button type="submit" className="submitbtn" ref={submitBtnRef}>
                 Submit
               </button>
             </form>
