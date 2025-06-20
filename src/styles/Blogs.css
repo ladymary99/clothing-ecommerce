@@ -2,7 +2,7 @@
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
   gap: 2rem;
-  padding: 1rem 4rem 4rem 4rem;
+  padding: 1rem 4rem 2rem 4rem;
 }
 
 .blog-title {
@@ -10,7 +10,7 @@
   text-align: center;
   margin-bottom: 3rem;
   color: #111;
-
+  padding: 3rem 0 0 0;
   font-family: "Anton", sans-serif;
 }
 
@@ -21,7 +21,6 @@
   position: relative;
   padding: 40px;
   max-width: 400px;
-
   margin: auto;
 }
 

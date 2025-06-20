@@ -51,11 +51,20 @@ const NewsSection = () => {
               shop now
             </button>
           </div>
-
-          <div className="news-image" ref={imageRef}>
+          <div className="news-video">
+            <video
+              src="/assets/news.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="pants-video-element"
+            />
+          </div>
+          {/* <div className="news-image" ref={imageRef}>
             <img src="/assets/picnews.jpg" alt="CONLI Pants" />
             <img src="/assets/picnews2.jpg" alt="CONLI Pants" />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
