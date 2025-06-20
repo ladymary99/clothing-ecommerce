@@ -83,14 +83,61 @@ const Header = () => {
       <div className="container header-container">
         <nav className="main-nav">
           <ul className="nav-list">
-            <li>
-              <a href="#home">Home</a>
+            <li className="dropdown">
+              <span className="dropdown-toggle">Shop</span>
+              <div className="mega-menu">
+                <div className="menu-column">
+                  <h4>SHOP ALL </h4>
+                  <ul className="menu-links">
+                    <li>All Accessories</li>
+                    <li>Blade Packs</li>
+                    <li>Dermaplaner Refills</li>
+                    <li>Cases</li>
+                    <li>Stands</li>
+                    <li>Bowl & Brush</li>
+                  </ul>
+                </div>
+                <div className="menu-column">
+                  <h4>SHOP BY RAZOR</h4>
+                  <ul className="menu-links">
+                    <li>All Razors</li>
+                    <li>All Kits & Bundles</li>
+                    <li>Triple-Blade Razor</li>
+                    <li>Single-Edge Razor</li>
+                    <li>Dermaplaner</li>
+                    <li>Razor Sets</li>
+                  </ul>
+                </div>
+                <div className="menu-column">
+                  <h4>SHOP BY AREA</h4>
+                  <ul className="menu-links">
+                    <li>Body Shaving</li>
+                    <li>Face Shaving</li>
+                    <li>Head Shaving</li>
+                    <li>Dermaplaning</li>
+                  </ul>
+                </div>
+                <div className="menu-column">
+                  <h4>SHOP SHAVE CARE</h4>
+                  <ul className="menu-links">
+                    <li>All Shave Care</li>
+                    <li>Oil & Serum Set</li>
+                    <li>Shave Oil</li>
+                    <li>Calming Serum</li>
+                    <li>Shave Soap</li>
+                  </ul>
+                </div>
+                <div className="menu-column image-column">
+                  <img src="/assets/header.jpg" alt="Razor Sets" />
+                  <p className="paragraph">BEST BY VANTE</p>
+                </div>
+              </div>
             </li>
+
             <li>
-              <a href="#collections">Collections</a>
-            </li>
-            <li>
-              <a href="#blog">Blog</a>
+              <a href="#blog" className="dropdown-toggle">
+                Blog
+              </a>
             </li>
           </ul>
         </nav>
