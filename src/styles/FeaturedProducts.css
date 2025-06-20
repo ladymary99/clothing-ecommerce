@@ -50,7 +50,7 @@
   object-fit: cover;
 }
 .carousel-underline {
-  width: 1120px;
+  width: 1140px;
   height: 3px;
   background-color: black;
   transform: translate(0px, -141px);
@@ -77,7 +77,7 @@
   background-color: #99f78d;
   color: black;
   padding: 5px 10px;
-  text-transform: uppercase;
+
   font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
   width: 100%;
@@ -99,10 +99,10 @@
 .featured-products .swiper-button-prev,
 .featured-products .swiper-button-next {
   color: black;
-  transform: translate(-13px, 70px);
+  transform: translate(-13px, 67px);
 }
 .featured-products .swiper-button-next {
-  transform: translate(10px, 70px);
+  transform: translate(10px, 67px);
 }
 .featured-products .swiper-button-prev.swiper-button-disabled,
 .featured-products .swiper-button-next.swiper-button-disabled {

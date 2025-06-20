@@ -69,7 +69,12 @@ const BlogSection = () => {
               <p>{blog.subtitle}</p>
               <span className="author">by Jayson Burgess</span>
             </div>
-            <button className="blog-btn">More</button>
+            <button className="blog-btn">
+              <span className="btn-text">More</span>
+              <span className="hover-arrow">
+                <img src="/assets/arrow.svg" alt="Arrow" />
+              </span>
+            </button>
           </div>
         ))}
       </div>

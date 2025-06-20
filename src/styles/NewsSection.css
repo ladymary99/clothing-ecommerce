@@ -1,5 +1,5 @@
 .news-section {
-  background-color: var(--color-black);
+  background-color: rgb(234, 234, 235);
   color: var(--color-white);
   padding: 5px;
 }
@@ -19,6 +19,7 @@
   font-size: 80px;
   margin-bottom: var(--spacing-lg);
   font-family: "Anton", sans-serif;
+  color: black;
 }
 
 .news-text {

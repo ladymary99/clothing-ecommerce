@@ -76,8 +76,8 @@ const Hero = () => {
     <section id="home" className="hero" ref={heroRef}>
       <div className="hero-container">
         <div className="hero-content">
-          <h1 ref={titleRef} className="hero-title">
-            confidence
+          <h1 ref={titleRef} className="herotitle">
+            Confidence
           </h1>
           <div ref={textRef} className="hero-text">
             <p>

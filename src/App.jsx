@@ -9,6 +9,7 @@ import Collections from "./components/Collections";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import Blogs from "./components/Blogs";
+import Services from "./components/Services";
 import "./styles/App.css";
 
 // Register GSAP plugins
@@ -80,6 +81,7 @@ function App() {
         <main>
           <Hero />
           <Collections />
+          <Services />
           <FeaturedProducts />
           <NewsSection />
           <Blogs />

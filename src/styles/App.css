@@ -2,6 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: rgb(234, 234, 235);
 }
 
 main {
@@ -9,7 +10,6 @@ main {
 }
 
 section {
-  padding: var(--spacing-xxl) 0;
   position: relative;
 }
 
@@ -26,7 +26,6 @@ section {
   left: 0;
   width: 60px;
   height: 3px;
-  background-color: var(--color-black);
 }
 
 /* Animation classes */

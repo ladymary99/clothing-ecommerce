@@ -1,0 +1,54 @@
+.services-section {
+  gap: 1rem;
+  padding: 1rem 1rem;
+  background-color: rgb(234, 234, 235);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.servicetitle {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #111;
+}
+.service-card {
+  text-align: center;
+  padding: 3rem;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  padding: 23px;
+  background-color: #99f78d;
+}
+
+.title-service {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #555;
+}

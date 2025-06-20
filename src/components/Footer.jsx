@@ -159,7 +159,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <img src="/assets/logo2.png" alt="arrow" />
+        <img src="/assets/logo21.png" alt="arrow" />
       </div>
     </footer>
   );
