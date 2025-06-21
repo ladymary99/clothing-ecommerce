@@ -151,6 +151,13 @@ const FeaturedProducts = () => {
       className="featured-products section"
       ref={sectionRef}
     >
+      <div className="section-header-column">
+        <div className="section-header">
+          <h2 ref={headingRef} className="section-title">
+            Best Seller Products
+          </h2>
+        </div>
+      </div>
       <div className="container featured-products-layout">
         <div className="products-carousel-column">
           <Swiper
@@ -182,18 +189,6 @@ const FeaturedProducts = () => {
             ))}{" "}
           </Swiper>
           <div className="carousel-underline" />
-        </div>
-
-        <div className="section-header-column">
-          <div className="section-header">
-            <h2 ref={headingRef} className="section-title">
-              Best
-              <br />
-              Seller
-              <br />
-              <span className="title-products-highlight">Products</span>
-            </h2>
-          </div>
         </div>
       </div>
     </section>
