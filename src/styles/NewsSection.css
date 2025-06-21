@@ -62,16 +62,27 @@
   transform: scale(1.03);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .news-grid {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
+  .news-video {
+    position: relative;
+    width: 55%;
+    height: 43%;
+    overflow: hidden;
+    padding: 0px;
+    border: 1px solid rgb(221, 221, 221);
+  }
+  .news-content {
+    margin: 0px;
+  }
 }
 .news-video {
   position: relative;
-  width: 75%;
-  height: 63%;
+  width: 65%;
+  height: 53%;
   overflow: hidden;
   padding: 0px;
   border: 1px solid rgb(221, 221, 221);

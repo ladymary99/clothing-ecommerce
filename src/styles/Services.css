@@ -7,7 +7,7 @@
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .servicetitle {
@@ -21,7 +21,6 @@
 .service-card {
   text-align: center;
   padding: 3rem;
-  border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,12 +46,11 @@ p {
   font-size: 0.95rem;
   color: #555;
 }
-@media (min-width: 768px) {
-  .services-grid {
-    gap: 0rem;
-    padding: 0;
-  }
+@media (max-width: 768px) {
   .service-card {
-    padding: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

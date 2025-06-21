@@ -6,7 +6,7 @@
   background-color: rgb(234, 234, 235);
 }
 .products-swiper .swiper-slide {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: stretch;
   height: auto;
