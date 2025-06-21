@@ -179,8 +179,9 @@
 @media (max-width: 768px) {
   .hero-container {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 0rem;
     text-align: center;
+    padding: 7rem 0 0 0;
   }
 
   .hero-title {
@@ -193,6 +194,7 @@
 
   .hero-model {
     height: 400px;
+    padding: 0;
   }
 }
 

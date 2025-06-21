@@ -220,22 +220,12 @@ const Header = () => {
               </li>
               <li>
                 <a href="#collections" onClick={() => setMenuOpen(false)}>
-                  Collections
+                  Shop
                 </a>
               </li>
               <li>
                 <a href="#blog" onClick={() => setMenuOpen(false)}>
                   Blog
-                </a>
-              </li>
-              <li>
-                <a href="#account" onClick={() => setMenuOpen(false)}>
-                  Account
-                </a>
-              </li>
-              <li>
-                <a href="#cart" onClick={() => setMenuOpen(false)}>
-                  Cart
                 </a>
               </li>
             </ul>
