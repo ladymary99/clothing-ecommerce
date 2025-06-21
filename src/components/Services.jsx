@@ -55,7 +55,7 @@ const Services = () => {
 
   return (
     <section className="services-section">
-      <h2 className="servicetitle">Our Services</h2>
+      <h2 className="servicetitle section-title">Our Services</h2>
       <div className="services-grid" ref={sectionRef}>
         {services.map((service, index) => (
           <div className="service-card" key={index}>

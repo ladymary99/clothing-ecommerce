@@ -11,25 +11,20 @@
 }
 
 .servicetitle {
-  font-family: "Roboto Condensed", sans-serif;
-  text-align: center;
+  font-family: "Anton", sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
-  font-weight: 600;
+  padding: 0 2rem;
+
   color: #111;
 }
 .service-card {
   text-align: center;
   padding: 3rem;
   border-radius: 16px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
 }
 
 .icon {
@@ -51,4 +46,13 @@
 p {
   font-size: 0.95rem;
   color: #555;
+}
+@media (min-width: 768px) {
+  .services-grid {
+    gap: 0rem;
+    padding: 0;
+  }
+  .service-card {
+    padding: 0;
+  }
 }
