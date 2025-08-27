@@ -194,4 +194,7 @@
   .section-header-column .section-title .title-products-highlight {
     font-size: 2rem;
   }
+  .carousel-underline {
+    display: none;
+  }
 }

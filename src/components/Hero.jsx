@@ -86,7 +86,7 @@ const Hero = () => {
             </p>
           </div>
           <button ref={buttonRef} className="hero-btn">
-            Shop now
+            Collections
           </button>
         </div>
         <div className="pants-video">
@@ -98,6 +98,18 @@ const Hero = () => {
             playsInline
             className="pants-video-element"
           />
+        </div>
+        <div className="marquee-container">
+          <p className="marquee-text">
+            <span>.</span>Style that speaks<span>.</span> Comfort that moves
+            <span>.</span> Fashion that inspires<span>.</span> Style that speaks
+            <span>.</span> <span>.</span>Comfort that moves<span>.</span>{" "}
+            Fashion that inspires<span>.</span>
+            <span>.</span>Style that speaks<span>.</span> Comfort that moves
+            <span>.</span> Fashion that inspires<span>.</span> Style that speaks
+            <span>.</span> <span>.</span>Comfort that moves<span>.</span>{" "}
+            Fashion that inspires<span>.</span>
+          </p>
         </div>
       </div>
     </section>
