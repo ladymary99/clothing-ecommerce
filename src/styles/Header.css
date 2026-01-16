@@ -70,7 +70,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: var(--spacing-xs);
+  padding: 0px;
   display: flex;
   align-items: center;
   justify-content: center;

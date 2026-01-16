@@ -53,18 +53,12 @@ html {
 body {
   font-family: var(--font-sans);
   line-height: 1.5;
-  background-color: var(--color-white);
-  color: var(--color-black);
+  
+  
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-pixel);
-  font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  text-transform: lowercase;
-}
+
 
 a {
   color: inherit;
@@ -73,9 +67,9 @@ a {
 }
 
 button {
-  font-family: var(--font-pixel);
+  
   border: none;
-  background: none;
+  
   cursor: pointer;
   transition: var(--transition-fast);
 }

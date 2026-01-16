@@ -15,7 +15,8 @@
   font-size: 2rem;
   margin-bottom: 1rem;
   padding: 0 2rem;
-
+  justify-content: center;
+  text-align: center;
   color: #111;
 }
 .service-card {

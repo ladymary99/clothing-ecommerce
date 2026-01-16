@@ -3,6 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
   gap: 2rem;
   padding: 1rem 4rem 2rem 4rem;
+  justify-content: center;
 }
 
 .blog-title {
@@ -50,7 +51,7 @@
   transform: scale(1.05);
 }
 
-.blog-card:hover .hover-arrow {
+.blog-btn:hover .hover-arrow {
   bottom: 10px;
   right: 10px;
 }
@@ -89,7 +90,7 @@
   overflow: hidden;
   margin: 0;
   background-color: #99f78d;
-  color: #111;
+  color: #f3f2f2;
   padding: 7px 35px;
   font-size: 15px;
   cursor: pointer;
@@ -113,6 +114,8 @@
 .blog-btn .btn-text {
   transition: transform 0.3s ease;
   display: inline-block;
+  color: #000000;
+  font-size: 15px;
 }
 
 .blog-btn .hover-arrow {

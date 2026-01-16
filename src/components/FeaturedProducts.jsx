@@ -101,9 +101,8 @@ const FeaturedProducts = () => {
       const imageWrapper = slide.querySelector(".product-image-wrapper");
       const priceTag = slide.querySelector(".pricetag");
       const addToCartBtn = slide.querySelector(".add-to-cart-btn");
-      const isVisible =
-        slide.classList.contains("swiper-slide-active") ||
-        slide.classList.contains("swiper-slide-visible");
+      const isVisible = slide.classList.contains("swiper-slide-active");
+
       if (isVisible) {
         gsap.to(productCard, {
           opacity: 1,
@@ -161,25 +160,35 @@ const FeaturedProducts = () => {
       <div className="container featured-products-layout">
         <div className="products-carousel-column">
           <Swiper
-            ref={swiperRef}
-            modules={[Navigation]}
-            spaceBetween={0}
-            slidesPerView={4}
-            navigation
-            loop={false}
-            breakpoints={{
-              640: { slidesPerView: 1, spaceBetween: 20 },
-              768: { slidesPerView: 2, spaceBetween: 30 },
-              1024: { slidesPerView: 3, spaceBetween: 40 },
-            }}
-            className="products-swiper"
-            onSwiper={(swiper) => {
-              setTimeout(() => animateSlideContent(swiper), 0);
-            }}
-            onSlideChangeTransitionEnd={(swiper) => {
-              animateSlideContent(swiper);
-            }}
-          >
+  modules={[Navigation]}
+  navigation
+  loop={true}               // ✅ loop enabled
+  centeredSlides={false}
+  spaceBetween={0}
+  slidesPerView={1}         // ✅ BASE MUST BE 1
+  breakpoints={{
+    0: {
+      slidesPerView: 1,     // 📱 mobile: FULL SCREEN
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,     // tablet
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 3,     // desktop
+      spaceBetween: 40,
+    },
+  }}
+  className="products-swiper"
+  onSwiper={(swiper) => {
+    setTimeout(() => animateSlideContent(swiper), 0);
+  }}
+  onSlideChangeTransitionEnd={(swiper) => {
+    animateSlideContent(swiper);
+  }}
+>
+
             {" "}
             {products.map((product) => (
               <SwiperSlide key={product.id}>
